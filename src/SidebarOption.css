@@ -1,0 +1,29 @@
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebarOption > .MuiSvgIcon-root {
+  padding: 20px;
+}
+
+.sidebarOption > h2 {
+  font-size: 20px;
+  font-weight: 800px;
+  margin-right: 20px;
+}
+
+/* If I dont give space between : and hover then it covers the whole row. If i give spac ebetween them then it only covers the icon */
+.sidebarOption:hover {
+  transform: scale(1.015);
+  background-color: #e8f5fe;
+  /* height: 60px; */
+  border-radius: 30px;
+  color: var(--twitter-color);
+  transition: color 100ms ease-in-out;
+  box-shadow: 0px 1px 3px lightblue;
+}
+.sidebarOption--active {
+  color: var(--twitter-color);
+}
